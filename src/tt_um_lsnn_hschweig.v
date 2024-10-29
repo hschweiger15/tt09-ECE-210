@@ -1,6 +1,6 @@
 `default_nettype none
 
-module tt_um_lsnn #(
+module tt_um_lsnn_hschweig #(  
     parameter MEMBRANE_WIDTH = 12,
     parameter INPUT_WIDTH = 8,
     parameter DECAY_FACTOR = 4'b0010,
