@@ -28,7 +28,7 @@ module tb ();
 `endif
 
   // Instantiate the LSNN module:
-  tt_um_lsnn user_project (
+  tt_um_lsnn_hschweig user_project (
 
       // Include power ports for the Gate Level test:
 `ifdef GL_TEST
