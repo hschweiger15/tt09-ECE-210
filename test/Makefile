@@ -5,7 +5,7 @@
 SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 SRC_DIR = $(PWD)/../src
-PROJECT_SOURCES = project.v
+PROJECT_SOURCES = tt_um_lsnn_hschweig.v
 
 ifneq ($(GATES),yes)
 
@@ -17,7 +17,7 @@ COMPILE_ARGS 		+= -I$(SRC_DIR)
 else
 
 # Gate level simulation:
-SIM_BUILD				= sim_build/gl
+SIM_BUILD		 = sim_build/gl
 COMPILE_ARGS    += -DGL_TEST
 COMPILE_ARGS    += -DFUNCTIONAL
 COMPILE_ARGS    += -DUSE_POWER_PINS
